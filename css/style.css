@@ -154,12 +154,15 @@ select:hover {
   tr{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    flex: 1 1 50%;
+    flex: 1;
   }
 
   td:nth-child(1){
     width: 100%;
+    text-align: left;
   }
 
 
