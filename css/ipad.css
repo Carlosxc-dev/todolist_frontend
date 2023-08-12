@@ -1,0 +1,8 @@
+@media screen and (max-width: 800px) {
+
+    main {
+        padding: 5px;
+        width: 100%;
+      }
+
+}
