@@ -82,6 +82,11 @@ td, th {
   color: #4EA8DE;
 }
 
+td:nth-child(1){
+  width: 50%;
+  text-align: left;
+}
+
 td {
   color: #F2F2F2;
   font-weight: 600;
@@ -89,8 +94,8 @@ td {
 
 
 tr {
+  border-radius: 10px ;
   background-color: #333333;
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 
@@ -98,7 +103,7 @@ tr {
   background-color: #262626;
 }
 
-.tr_style{
+table > tbody > .tr_style{
   border-radius: 8px;
   margin-bottom: 5px;
 }

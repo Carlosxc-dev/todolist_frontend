@@ -46,7 +46,7 @@ const updateTask = async ({ id, title, status }) => {
 
 
 const formatDate = (dateUTC) => {
-  const options = { dateStyle: 'long', timeStyle: 'short' };
+  const options = { dateStyle: 'short', timeStyle: 'short' };
   const date = new Date(dateUTC).toLocaleString('pt-br', options);
   return date;
 }
