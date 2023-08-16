@@ -1,6 +1,7 @@
 const tbody = document.querySelector('tbody');
 const addForm = document.querySelector('.add-form');
 const inputTask = document.querySelector('.input-task');
+const number_html = document.querySelector('.n_task');
 
 const fetchTasks = async () => {
   const response = await fetch('https://todolist-backend-jruh.onrender.com/task')
@@ -43,6 +44,11 @@ const updateTask = async ({ id, title, status }) => {
   loadTasks();
 }
 
+const number_task = async () =>{
+  const res = await fetch(`https://todolist-backend-jruh.onrender.com/number`)
+  const count = await res.json()
+  number_html.innerText = count;
+}
 
 
 const formatDate = (dateUTC) => {
@@ -142,6 +148,8 @@ const loadTasks = async () => {
     const tr = createRow(task);
     tbody.appendChild(tr);
   });
+
+  number_task();
 }
 
 

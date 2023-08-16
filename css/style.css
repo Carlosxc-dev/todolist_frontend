@@ -32,7 +32,7 @@ main {
   border-radius: 8px;
   padding: 20px;
   width: 90%;
-  margin: -40px auto;
+  margin: -70px auto;
 }
 
 .add-form {
@@ -54,6 +54,19 @@ input {
   font-weight: 600;
   color: #808080;
   background-color: #262626;
+}
+
+.cnt{
+  margin-bottom: 6px;
+}
+
+.qt_task{
+  color: #4EA8DE;
+  margin-bottom: 5px;
+}
+
+.n_task{
+  color: #FFF;
 }
 
 button[type="submit"] {
