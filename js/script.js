@@ -3,6 +3,7 @@ const addForm = document.querySelector('.add-form');
 const inputTask = document.querySelector('.input-task');
 const number_html = document.querySelector('.n_task');
 
+//api node que faz requisicao para backend
 const fetchTasks = async () => {
   const response = await fetch('https://todolist-backend-jruh.onrender.com/task')
   const tasks = await response.json()
